@@ -59,8 +59,8 @@ SmartVault revolutionizes file storage and management with its innovative featur
 1. **Clone and Install**
 
    ```bash
-   git clone [repository-url]
-   cd storage_management_solution
+   git clone https://github.com/himaenshuu/SmartVault
+   cd SmartVault
    npm install
    ```
 
