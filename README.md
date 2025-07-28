@@ -14,21 +14,18 @@ SmartVault revolutionizes file storage and management with its innovative featur
 ### 🎯 Unique Features
 
 1. **AI-Powered File Management**
-
    - Intelligent file categorization and tagging
    - Smart search with natural language processing
    - AI-driven file organization suggestions
    - Interactive AI chatbot for quick assistance
 
 2. **Advanced Security**
-
    - End-to-end encryption
    - Multi-factor authentication with OTP
    - Granular access controls
    - Real-time activity monitoring
 
 3. **Modern User Experience**
-
    - Intuitive drag-and-drop interface
    - Real-time file previews
    - Dark/Light mode support
@@ -43,7 +40,6 @@ SmartVault revolutionizes file storage and management with its innovative featur
 ### 💡 Technical Innovation
 
 - **Next.js App Router & Server Components**
-
   - Leveraging the latest Next.js 15 features
   - Server-side rendering for optimal performance
   - API routes for secure backend operations
@@ -58,33 +54,34 @@ SmartVault revolutionizes file storage and management with its innovative featur
 
 1. **Clone and Install**
 
-   ```bash
-   git clone https://github.com/himaenshuu/SmartVault
-   cd SmartVault
-   npm install
-   ```
+```bash
+git clone https://github.com/himaenshuu/SmartVault
+cd SmartVault
+npm install
+```
 
 2. **Configure Environment**
    Create a `.env.local` file:
 
-   ```env
-   NEXT_PUBLIC_APPWRITE_ENDPOINT='https://cloud.appwrite.io/v1'
-   NEXT_PUBLIC_APPWRITE_PROJECT=''
-   NEXT_PUBLIC_APPWRITE_DATABASE=''
-   NEXT_PUBLIC_APPWRITE_USERS_COLLECTION=''
-   NEXT_PUBLIC_APPWRITE_FILES_COLLECTION=''
-   NEXT_PUBLIC_APPWRITE_BUCKET=''
-   NEXT_APPWRITE_KEY=''
-   ```
+```env
+NEXT_PUBLIC_APPWRITE_ENDPOINT='https://cloud.appwrite.io/v1'
+NEXT_PUBLIC_APPWRITE_PROJECT=''
+NEXT_PUBLIC_APPWRITE_DATABASE=''
+NEXT_PUBLIC_APPWRITE_USERS_COLLECTION=''
+NEXT_PUBLIC_APPWRITE_FILES_COLLECTION=''
+NEXT_PUBLIC_APPWRITE_BUCKET=''
+NEXT_APPWRITE_KEY=''
+```
 
 3. **Start Development**
-   ```bash
-   npm run dev
-   ```
+
+```bash
+npm run dev
+```
 
 ## 🏗️ Architecture Overview
 
-```
+```plaintext
 app/                # Next.js app directory
    (auth)/         # Authentication routes
    (root)/         # Main application routes
@@ -100,7 +97,6 @@ types/            # TypeScript definitions
 ## 📊 Performance & Security
 
 - **Lighthouse Scores**
-
   - Performance: 95+
   - Accessibility: 100
   - Best Practices: 100
@@ -112,7 +108,7 @@ types/            # TypeScript definitions
   - Role-based access control
   - Regular security audits
 
-## 🛠️ Development
+## 🛠️ Development Commands
 
 ```bash
 # Development
@@ -145,136 +141,3 @@ MIT License
 ### 🌟 Created with Passion by Himanshu
 
 Using cutting-edge technologies like Next.js 15, TypeScript, and Appwrite to revolutionize file management.
-
-## Features
-
-- **Secure Authentication** - Complete user authentication system using Appwrite
-- **File Management**
-  - Upload multiple file types (documents, images, videos, audio)
-  - View, rename, and delete files
-  - Download functionality
-  - File sharing capabilities
-- **Smart Dashboard**
-  - Storage usage visualization
-  - File type categorization
-  - Recent uploads tracking
-- **Advanced Search & Sort**
-  - Global file search
-  - Multiple sorting options (date, name, size)
-- **AI-Powered Chatbot**
-  - Interactive file management assistance
-  - Quick access to features
-
-## Tech Stack
-
-- **Frontend**: React 19, Next.js 15
-- **Backend**: Appwrite
-- **Styling**: TailwindCSS, ShadCN
-- **Language**: TypeScript
-- **AI Integration**: Google Generative AI
-
-## Quick Start
-
-1. **Clone the repository**
-   \\\ash
-   git clone https://github.com/himaenshuu/SmartVault
-   cd SmartVault
-   \\\
-
-2. **Install dependencies**
-   \\\ash
-   npm install
-   \\\
-
-3. **Set up environment variables**
-   Create a \.env.local\ file:
-   \\\env
-   NEXT_PUBLIC_APPWRITE_ENDPOINT='https://cloud.appwrite.io/v1'
-   NEXT_PUBLIC_APPWRITE_PROJECT=''
-   NEXT_PUBLIC_APPWRITE_DATABASE=''
-   NEXT_PUBLIC_APPWRITE_USERS_COLLECTION=''
-   NEXT_PUBLIC_APPWRITE_FILES_COLLECTION=''
-   NEXT_PUBLIC_APPWRITE_BUCKET=''
-   NEXT_APPWRITE_KEY=''
-   \\\
-
-4. **Start development server**
-   \\\ash
-   npm run dev
-   \\\
-
-## Project Structure
-
-\\\
- app/ # Next.js app directory
-(auth)/ # Authentication routes
-(root)/ # Main application routes
-api/ # API routes
-components/ # Reusable components
-lib/ # Utilities and configurations
-actions/ # Server actions
-appwrite/ # Appwrite configuration
-public/ # Static assets
-types/ # TypeScript type definitions
-\\\
-
-## Key Features
-
-1. **File Management**
-
-   - Multi-file upload support
-   - File preview capabilities
-   - Secure sharing system
-   - Download functionality
-
-2. **Dashboard Analytics**
-
-   - Storage usage tracking
-   - File type distribution
-   - Recent activity monitoring
-
-3. **AI Assistant**
-
-   - Smart file organization
-   - Quick actions through chat
-   - Contextual help
-
-4. **Security**
-   - Secure authentication
-   - File access controls
-   - Protected routes
-
-## Responsive Design
-
-- Full support for all devices
-- Optimized mobile interface
-- Adaptive layout system
-
-## Development Commands
-
-\\\ash
-
-# Development server
-
-npm run dev
-
-# Production build
-
-npm run build
-
-# Start production server
-
-npm start
-
-# Linting
-
-npm run lint
-\\\
-
-## License
-
-This project is licensed under the MIT License.
-
----
-
-Built with using Next.js 15 and Appwrite
