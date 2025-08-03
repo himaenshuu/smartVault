@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+  smartvault:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1
+      # Add your environment variables here
+      - NEXT_PUBLIC_APPWRITE_ENDPOINT=${NEXT_PUBLIC_APPWRITE_ENDPOINT}
+      - NEXT_PUBLIC_APPWRITE_PROJECT=${NEXT_PUBLIC_APPWRITE_PROJECT}
+      - NEXT_PUBLIC_APPWRITE_DATABASE=${NEXT_PUBLIC_APPWRITE_DATABASE}
+      - NEXT_PUBLIC_APPWRITE_USERS_COLLECTION=${NEXT_PUBLIC_APPWRITE_USERS_COLLECTION}
+      - NEXT_PUBLIC_APPWRITE_FILES_COLLECTION=${NEXT_PUBLIC_APPWRITE_FILES_COLLECTION}
+      - NEXT_PUBLIC_APPWRITE_BUCKET=${NEXT_PUBLIC_APPWRITE_BUCKET}
+      - NEXT_PUBLIC_APPWRITE_KEY=${NEXT_PUBLIC_APPWRITE_KEY}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "healthcheck.js"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - smartvault-network
+
+networks:
+  smartvault-network:
+    driver: bridge

@@ -19,7 +19,8 @@ function cleanGeminiText(text: string) {
 
 export async function POST(req: NextRequest) {
   const { message } = await req.json();
-  const { GEMINI_API_KEY: apiKey, MODEL_NAME: modelName } = process.env;
+  const { GEMINI_API_KEY: apiKey } = process.env;
+  const modelName = "gemini-2.0-flash-lite";
 
   if (!apiKey) {
     return NextResponse.json(
