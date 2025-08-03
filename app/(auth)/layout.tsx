@@ -7,7 +7,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <section className="hidden w-1/2 items-center justify-center bg-brand p-10 lg:flex xl:w-2/5">
         <div className="flex max-h-[800px] max-w-[430px] flex-col justify-center space-y-12 ">
           <Image
-            src="/assets/icons/Logo-full.svg"
+            src="/assets/icons/logo-full.svg"
             alt="logo"
             width={224}
             height={82}
@@ -17,7 +17,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           <div className="space-y-5 text-white">
             <h1 className="h1">Manage your files the best way</h1>
             <p className="body-1">
-              This is a place where you can store all your documents with AI insights.
+              This is a place where you can store all your documents with AI
+              insights.
             </p>
           </div>
           <Image
@@ -37,7 +38,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             alt="logo"
             width={150}
             height={40}
-            style={{ width: 'auto', height: 'auto' }}
+            style={{ width: "auto", height: "auto" }}
           />
         </div>
 
