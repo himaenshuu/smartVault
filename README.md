@@ -140,4 +140,4 @@ MIT License
 
 ### 🌟 Created with Passion by Himanshu
 
-Using cutting-edge technologies like Next.js 15, TypeScript, and Appwrite to revolutionize file management.
+Using cutting-edge technologies like Next.js 15, TypeScript, and Appwrite to revolutionize file management..
