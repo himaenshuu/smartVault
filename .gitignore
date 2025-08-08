@@ -35,7 +35,6 @@ yarn-error.log*
 .env.production
 .env.development.local
 .env.example
-.cursorignore
 vercel.json
 README.md.new
 
