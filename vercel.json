@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "regions": ["iad1"],
+  "functions": {
+    "app/api/**/*.ts": {
+      "maxDuration": 30
+    }
+  },
+  "build": {
+    "env": {
+      "NEXT_TELEMETRY_DISABLED": "1"
+    }
+  },
+  "env": {
+    "NEXT_PUBLIC_APPWRITE_ENDPOINT": "@next_public_appwrite_endpoint",
+    "NEXT_PUBLIC_APPWRITE_PROJECT": "@next_public_appwrite_project",
+    "NEXT_PUBLIC_APPWRITE_DATABASE": "@next_public_appwrite_database",
+    "NEXT_PUBLIC_APPWRITE_USERS_COLLECTION": "@next_public_appwrite_users_collection",
+    "NEXT_PUBLIC_APPWRITE_FILES_COLLECTION": "@next_public_appwrite_files_collection",
+    "NEXT_PUBLIC_APPWRITE_BUCKET": "@next_public_appwrite_bucket",
+    "NEXT_APPWRITE_KEY": "@next_appwrite_key"
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ]
+}

@@ -31,6 +31,14 @@ const nextConfig = {
                 protocol: "https",
                 hostname: "fra.cloud.appwrite.io",
             },
+            {
+                protocol: "https",
+                hostname: "fonts.googleapis.com",
+            },
+            {
+                protocol: "https",
+                hostname: "fonts.gstatic.com",
+            },
         ],
     },
 }
